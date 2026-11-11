@@ -1,0 +1,45 @@
+{
+  "hosting": [
+    {
+      "target": "goldstar",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "run": {
+            "serviceId": "goldstar-dashboard",
+            "region": "us-central1"
+          }
+        }
+      ]
+    },
+    {
+      "target": "demo",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "run": {
+            "serviceId": "example-demo-dashboard",
+            "region": "us-central1"
+          }
+        }
+      ]
+    }
+  ],
+  "emulators": {
+    "hosting": {
+      "port": 5000
+    }
+  }
+}

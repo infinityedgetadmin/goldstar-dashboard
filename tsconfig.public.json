@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/app/(public)/**/*.ts",
+    "src/app/(public)/**/*.tsx",
+    "src/lib/public/**/*.ts",
+    "src/lib/public/**/*.tsx",
+    "src/features/guest-*/**/*.ts",
+    "src/features/guest-*/**/*.tsx",
+    "src/components/ui/buttons/**/*.ts",
+    "src/components/ui/buttons/**/*.tsx",
+    "src/components/ui/typography/**/*.ts",
+    "src/components/ui/typography/**/*.tsx"
+  ],
+  "exclude": ["node_modules"]
+}

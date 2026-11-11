@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+@import '../styles/tokens.css';
+
+@theme {
+  --font-sans: var(--font-inter), 'Inter', system-ui, sans-serif;
+  --font-display: var(--font-cormorant), 'Cormorant Garamond', serif;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-bg-secondary text-text-primary font-sans antialiased;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-display;
+}
