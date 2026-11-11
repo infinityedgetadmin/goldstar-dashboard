@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Cormorant_Garamond } from 'next/font/google';
+import { guestCormorant as cormorant, guestInter as inter } from '@/fonts';
 import '../globals.css';
 
 /**
@@ -15,8 +15,6 @@ import '../globals.css';
  * is shared with the dashboard root (`(app)/layout.tsx`) since CSS
  * doesn't affect the JS bundle budget this split exists to protect.
  */
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
-const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['600', '700'], variable: '--font-display' });
 export const metadata: Metadata = { title: 'Your valet ticket', robots: { index: false, follow: false } };
 export default function PublicLayout({ children }: { children: React.ReactNode }) {
   // `gs-public` scopes the token overrides emitted at the bottom of

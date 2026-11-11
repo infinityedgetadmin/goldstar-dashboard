@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Cormorant_Garamond } from 'next/font/google';
+import { dashboardCormorant as cormorant, dashboardInter as inter } from '@/fonts';
 import '../globals.css';
 import { Providers } from '@/providers/providers';
 import { brand } from '@/config/operators/brand';
@@ -16,8 +16,6 @@ import { brand } from '@/config/operators/brand';
  * other. See `src/app/(public)/layout.tsx` for the guest root and
  * `scripts/check-guest-bundle.mjs` for the budget this decouples.
  */
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
-const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ['600', '700'], variable: '--font-cormorant' });
 
 // Plan 8 Task 15: the build-time operator brand (`NEXT_PUBLIC_OPERATOR`) names the tab — the
 // signed-in operator's own branding takes over inside the shell (sidebar, theme vars).
